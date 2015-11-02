@@ -7,6 +7,9 @@ gem 'bootstrap-sass', '~>3.3.5'
 #gem 'autoprefixer-rails', '~>5.2.0'
 #install devise
 gem 'devise', '~>3.5.1'
+
+#install jquery
+gem 'jquery-ui-rails', '~>5.0.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
