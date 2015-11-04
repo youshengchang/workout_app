@@ -8,11 +8,12 @@
         <h1>List of Members</h1>
     </div>
 </div>
-
+<% @athletes.each do |athlete| %>
 <div class="row">
-        <% @athletes.each do |athlete| %>
+
         <div class="col-md-10 well member">
             <%= athlete.full_name %>
         </div>
-        <% end %>
+
 </div>
+<% end %>
