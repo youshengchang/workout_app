@@ -18,6 +18,6 @@ RSpec.feature "Listing Registered Memebers" do
         
         expect(page).to have_content(@john.full_name)
         expect(page).to have_content(@sarah.full_name)
-        expect(current_path).to eq("dashboard/search")
+        expect(current_path).to eq("/dashboard/search")
     end
 end
