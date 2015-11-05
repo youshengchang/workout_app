@@ -16,6 +16,8 @@ Rails.application.routes.draw do
       post :search, to: 'dashboard#search'
     end
   end
+  
+  resource :friendships, only: [:show, :create, :destroy]
 
   # You can have the root of your site routed with "root"
   root to: 'dashboard#index'
