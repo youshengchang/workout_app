@@ -11,6 +11,18 @@ class FriendshipsController < ApplicationController
         @friend = Friendship.find(params[:id]).friend
         @exercises = @friend.exercises.all
     end
+    
+    def destroy
+        
+        @friendship = Friendship.find(params[:id])
+        
+        if @friendship.destroy
+            flash[:success] = "#{@friendship.friend.full_name} unfollowed"
+        else
+            flash[:danger] = "#{@friendship.friend.full_name} can not be unfollowed"
+        end
+        redirect_to user_exercises_path(current_user)
+    end
     private
         def friendhsip_params
             params.permit(:friend_id, :user_id)
