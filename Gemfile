@@ -9,7 +9,7 @@ gem 'bootstrap-sass', '~>3.3.5'
 gem 'devise', '~>3.5.1'
 
 #install jquery
-gem 'jquery-ui-rails', '~>5.0.5'
+gem 'jquery-ui-rails', '~>6.0.0'
 
 #install pagination
 gem 'will_paginate-bootstrap'
