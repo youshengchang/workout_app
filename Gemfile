@@ -6,7 +6,7 @@ gem 'rails', '4.2.3'
 gem 'bootstrap-sass', '~>3.3.5'
 #gem 'autoprefixer-rails', '~>5.2.0'
 #install devise
-gem 'devise', '~>3.5.1'
+gem 'devise', '~>4.7.1'
 
 #install jquery
 gem 'jquery-ui-rails', '~>5.0.5'
